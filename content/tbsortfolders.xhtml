@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/msgSelectOffline.css" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/folderMenus.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://tbsortfolders/locale/ui.dtd">
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="__MSG_general.title__" onload="on_load();">
+  <script type="application/javascript" src="chrome://tbsortfolders/content/ui.js" />
+
+  <description style="font-weight: bold; color: #c00; display: none;" id="err_no_accounts">
+    __MSG_accountsort.noaccountsetupyet__
+  </description>
+
+  <tabbox selectedIndex="0" flex="1">
+    <tabs>
+      <tab><label value="__MSG_tab.accounts__" /></tab>
+      <tab><label value="__MSG_tab.folders__"/></tab>
+      <tab><label value="__MSG_tab.extra__" /></tab>
+    </tabs>
+    <tabpanels flex="1">
+      <tabpanel orient="vertical">
+        <description style="width: 400px">
+          __MSG_accountssort.description__
+        </description>
+        <hbox flex="1">
+          <vbox flex="1">
+            <richlistbox id="accounts_list" onclick="on_accounts_list_click();" flex="1">
+            </richlistbox>
+            <richlistbox rows="1" disabled="true">
+              <richlistitem>
+                <description>
+                  __MSG_accountsort.localfolders__
+                </description>
+              </richlistitem>
+            </richlistbox>
+            <richlistbox flex="1" id="news_accounts_list" style="display: none;" onclick="on_news_accounts_list_click();">
+            </richlistbox>
+          </vbox>
+          <vbox>
+            <groupbox>
+              <caption label="__MSG_gb.move__" />
+              <hbox>
+                <button oncommand="on_account_move_up();">
+                  <image src="chrome://tbsortfolders/content/style/up.png" />
+                  <label value="__MSG_button.move_up__" />
+                </button>
+                <button oncommand="on_account_move_down();">
+                  <image src="chrome://tbsortfolders/content/style/down.png" />
+                  <label value="__MSG_button.move_down__" />
+                </button>
+                <spacer flex="1" />
+              </hbox>
+            </groupbox>
+            <groupbox>
+              <caption label="__MSG_gb.first__" />
+              <description style="max-width: 300px;">__MSG_gbfirst.default__</description>
+              <menulist oncommand="update_accounts_prefs();">
+                <menupopup id="default_account">
+                  <menuitem value="-1" label="__MSG_mi.firstmail__" disabled="true" />
+                </menupopup>
+              </menulist>
+            </groupbox>
+            <groupbox>
+              <caption label="__MSG_gb.extra__" />
+              <description style="width: 300px">
+                __MSG_accountsort.warning__
+              </description>
+              <description style="width: 300px">
+                __MSG_accountsort.restartwarning__
+              </description>
+            </groupbox>
+          </vbox>
+        </hbox>
+        <hbox>
+          <spacer flex="1" />
+          <button label="__MSG_button.restart__" icon="refresh" oncommand="on_account_restart();"/>
+          <button label="__MSG_button.close__" icon="close" oncommand="on_close();"/>
+        </hbox>
+      </tabpanel>
+      <tabpanel orient="vertical">
+        <description style="width: 400px">__MSG_sortfolders.description__</description>
+        <menulist oncommand="on_account_changed();">
+          <menupopup id="accounts_menu">
+          </menupopup>
+        </menulist>
+        <menulist oncommand="on_sort_method_changed();" id="sort_method" style="margin-bottom: 1ex">
+          <menupopup>
+            <menuitem value="0" label="__MSG_sortmethod.default__" />
+            <menuitem value="1" label="__MSG_sortmethod.alphabetical__" />
+            <menuitem value="2" label="__MSG_sortmethod.custom__" />
+          </menupopup>
+        </menulist>
+
+        <hbox flex="1">
+          <tree id="foldersTree"
+            style="overflow: hidden;
+            width: 161px; height: 261px"
+            treelines="true"
+            hidecolumnpicker="true"
+            flex="1"
+            >
+            <treecols>
+              <treecol id="folderNameCol" width="161px" persist="hidden width"
+                flex="1"
+                label="__MSG_tc.foldername__" primary="true" />
+            </treecols>
+            <treechildren id="treeChildren"></treechildren>
+          </tree>
+          <vbox>
+            <groupbox id="default_sort_box">
+              <caption label="__MSG_gb.extra__" />
+              <description width="300px">__MSG_sortmethod.default.description__</description>
+            </groupbox>
+            <groupbox id="alphabetical_sort_box">
+              <caption label="__MSG_gb.extra__" />
+              <description width="300px">__MSG_sortmethod.alphabetical.description__</description>
+            </groupbox>
+            <vbox id="manual_sort_box">
+              <groupbox>
+                <caption label="__MSG_gb.movefolder__" />
+                <hbox>
+                  <button oncommand="on_move_up();">
+                    <image src="chrome://tbsortfolders/content/style/up.png" />
+                    <label value="__MSG_button.move_up__" />
+                  </button>
+                  <button oncommand="on_move_down();">
+                    <image src="chrome://tbsortfolders/content/style/down.png" />
+                    <label value="__msg_button.move_down__" />
+                  </button>
+                  <spacer flex="1" />
+                </hbox>
+              </groupbox>
+              <groupbox>
+                <caption label="__msg_gb.extra__" />
+                <description width="300px">__MSG_sortmethod.custom.description__</description>
+              </groupbox>
+            </vbox>
+          </vbox>
+        </hbox>
+        <hbox>
+          <spacer flex="1" />
+          <button label="__MSG_button.refresh__" icon="refresh" oncommand="on_refresh();"/>
+          <button label="__MSG_button.close__" icon="close" oncommand="on_close();"/>
+        </hbox>
+      </tabpanel>
+      <tabpanel orient="vertical">
+        <description style="width: 400px">
+          __MSG_extra.description__
+        </description>
+        <groupbox>
+          <caption label="__MSG_extra.startup__" />
+          <label flex="1" value="__MSG_extra.startupfolder__" />
+          <hbox>
+            <menulist oncommand="on_startup_folder_method_changed(event);" id="startup_folder_method" value="1">
+              <menupopup>
+                <menuitem value="0" label="__MSG_extra.uselast__" />
+                <menuitem value="1" label="__MSG_extra.usecustom__" />
+              </menupopup>
+            </menulist>
+            <menulist id="startupFolder"
+              label="__MSG_extra.nofolder__" oncommand="on_pick_folder(event);" flex="1">
+              <menupopup id="startupFolderPopup" type="folder"
+                         is="folder-menupopup"
+                         showFileHereLabel="true"
+                         fileHereLabel="__MSG_extra.usethisfolder__"/>
+            </menulist>
+          </hbox>
+        </groupbox>
+        <spacer flex="1" />
+        <hbox>
+          <spacer flex="1" />
+          <button label="__MSG_button.close__" icon="close" oncommand="on_close();"/>
+        </hbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+
+</window>

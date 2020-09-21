@@ -1,0 +1,113 @@
+{
+    "accountsort.localfolders": {
+        "message": "ローカルフォルダ"
+    },
+    "accountsort.noaccountsetupyet": {
+        "message": "アカウント設定がまだありません！"
+    },
+    "accountsort.restartwarning": {
+        "message": "変更を反映させるためには Thunderbird を再起動してください"
+    },
+    "accountsort.warning": {
+        "message": "通常のメールアカウントは RSS アカウントと同様に Unix Movemail アカウントの最上部に置かれます。 その次にローカルフォルダ、そしてリスト最後はブログとニュースアカウントとなります。 デフォルトとしてローカルフォルダかブログとニュースグループアカウントのどちらかを選んでリスト先頭に配置することによってこれを変えることができます。"
+    },
+    "accountssort.description": {
+        "message": "このパネルではフォルダ欄のアカウントを選べます。アカウント内のフォルダを分類したいときは次のタブを使用してください。"
+    },
+    "button.close": {
+        "message": "閉じる"
+    },
+    "button.move_down": {
+        "message": "下へ"
+    },
+    "button.move_up": {
+        "message": "上へ"
+    },
+    "button.refresh": {
+        "message": "フォルダペインの更新"
+    },
+    "button.restart": {
+        "message": "Thunderbird の再起動"
+    },
+    "extra.description": {
+        "message": "ここではフォルダ関連の設定をすることで Thunderbird をさらにカスタマイズできます。"
+    },
+    "extra.nofolder": {
+        "message": "フォルダの選択なし"
+    },
+    "extra.startup": {
+        "message": "起動フォルダ"
+    },
+    "extra.startupfolder": {
+        "message": "以下のフォルダが開いた状態で起動する"
+    },
+    "extra.usecustom": {
+        "message": "カスタムフォルダ"
+    },
+    "extra.uselast": {
+        "message": "最後に開いたフォルダ"
+    },
+    "extra.usethisfolder": {
+        "message": "現在のフォルダ"
+    },
+    "gb.extra": {
+        "message": "追加情報"
+    },
+    "gb.first": {
+        "message": "フォルダペイン最上部のアカウント設定"
+    },
+    "gb.move": {
+        "message": "選択したアカウントの移動"
+    },
+    "gb.movefolder": {
+        "message": "選択したフォルダの移動"
+    },
+    "gbfirst.default": {
+        "message": "これはデフォルトアカウントです"
+    },
+    "general.title": {
+        "message": "Manually sort folders 設定"
+    },
+    "mi.firstmail": {
+        "message": "フォルダペイン最上部を RSS またはメールアカウントにする"
+    },
+    "sortfolders.description": {
+        "message": "このパネルで各アカウントのフォルダの並べ替えを可能にします。最初にアカウント、次に並べ替え方法を選択してください。"
+    },
+    "sortmethod.alphabetical": {
+        "message": "単純な文字列の比較を使用する"
+    },
+    "sortmethod.alphabetical.description": {
+        "message": "これは最も基本的な文字列比較関数を使用する標準の並べ替え機能です。 特別なユニコード符号を使用する Gmail のようなフォルダと異なるカテゴリを作成します。"
+    },
+    "sortmethod.custom": {
+        "message": "手動による並べ替えを使用する"
+    },
+    "sortmethod.custom.description": {
+        "message": "手動でフォルダを分類するときは上のボタンを使用してください。 新規に追加及び名前を変更したフォルダはリストの最下段になります。 それが合わない場合は後で戻すことができます。"
+    },
+    "sortmethod.default": {
+        "message": "Thunderbird のデフォルトを使用する"
+    },
+    "sortmethod.default.description": {
+        "message": "これは Thunderbird のデフォルト並べ替え機能です。Gmail とは異なり、特別なユニコード符号を考慮しません。"
+    },
+    "sortmethod.samplelegend": {
+        "message": "(サンプルフォルダ欄)"
+    },
+    "tab.accounts": {
+        "message": "アカウントの並べ替え"
+    },
+    "tab.extra": {
+        "message": "追加設定"
+    },
+    "tab.folders": {
+        "message": "フォルダの並べ替え"
+    },
+    "tbsf.menuentry.label": {
+        "message": "フォルダの並べ替え"
+    },
+    "tc.foldername": {
+        "message": "フォルダ名"
+    }
+}

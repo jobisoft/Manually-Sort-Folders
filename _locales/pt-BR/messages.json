@@ -1,0 +1,113 @@
+{
+    "accountsort.localfolders": {
+        "message": "Pastas Locais"
+    },
+    "accountsort.noaccountsetupyet": {
+        "message": "Você não tem nenhuma configuração de conta ainda!"
+    },
+    "accountsort.restartwarning": {
+        "message": "Você deve reiniciar o Thunderbird para que as mudanças tenham efeito."
+    },
+    "accountsort.warning": {
+        "message": "Contas de correio regular, do Unix Movemail, bem como contas de RSS deve vir em primeiro lugar. As pastas locais são as seguintes e, por último, as contas Notícias. Você pode substituir isto escolhendo pastas locais ou uma das contas de Grupos de Notícias como padrão, portanto, colocando-o no topo da lista."
+    },
+    "accountssort.description": {
+        "message": "Este painel permite ordenar as contas no painel de pastas. Use a próxima aba, se você desejar ordenar as pastas dentro de uma conta."
+    },
+    "button.close": {
+        "message": "Fechar"
+    },
+    "button.move_down": {
+        "message": "Mover para baixo"
+    },
+    "button.move_up": {
+        "message": "Mover para cima"
+    },
+    "button.refresh": {
+        "message": "Recarregar o painel de pastas"
+    },
+    "button.restart": {
+        "message": "Reiniciar o Thunderbird"
+    },
+    "extra.description": {
+        "message": "Use essa aba para personalizar ainda mais o Thunderbird usando várias configurações de pastas"
+    },
+    "extra.nofolder": {
+        "message": "Nenhuma pasta selecionada"
+    },
+    "extra.startup": {
+        "message": "Pasta de início"
+    },
+    "extra.startupfolder": {
+        "message": "Por padrão, comece abrindo a seguinte pasta"
+    },
+    "extra.usecustom": {
+        "message": "Use uma pasta personalizada"
+    },
+    "extra.uselast": {
+        "message": "Use a última pasta aberta"
+    },
+    "extra.usethisfolder": {
+        "message": "Use a presente pasta"
+    },
+    "gb.extra": {
+        "message": "Informação adicional"
+    },
+    "gb.first": {
+        "message": "Primeira conta no painel de pastas"
+    },
+    "gb.move": {
+        "message": "Mover a conta selecionada"
+    },
+    "gb.movefolder": {
+        "message": "Mover a pasta selecionada"
+    },
+    "gbfirst.default": {
+        "message": "Esta também é a conta padrão."
+    },
+    "general.title": {
+        "message": "Manually sort folders (Organiza pastas manualmente)"
+    },
+    "mi.firstmail": {
+        "message": "Primeiro RSS ou conta de correio eletrônico da lista"
+    },
+    "sortfolders.description": {
+        "message": "Este painel permite que você classifique as pastas de cada conta. Primeiro, selecione uma conta, então um método de classificação."
+    },
+    "sortmethod.alphabetical": {
+        "message": "Classifique considerando todo o teor da linha"
+    },
+    "sortmethod.alphabetical.description": {
+        "message": "Esta é uma função de classificação padrão que utiliza apenas a função de comparação de linha mais simples. Ele permite criar diferentes categorias de pastas ao estilo do GMail usando símbolos especiais Unicode."
+    },
+    "sortmethod.custom": {
+        "message": "Use uma função de classificação definida manualmente"
+    },
+    "sortmethod.custom.description": {
+        "message": "Use os botões acima para ordenar manualmente suas pastas. Se uma nova pasta é adicionada, ela será colocada no final da lista. Você pode voltar aqui mais tarde, se isso não lhe agradar."
+    },
+    "sortmethod.default": {
+        "message": "Use os valores padrões do Thunderbird"
+    },
+    "sortmethod.default.description": {
+        "message": "Esta é a função padrão de classificação do Thunderbird. Diferentemente do Gmail, ele não leva em conta símbolos Unicode especiais."
+    },
+    "sortmethod.samplelegend": {
+        "message": "(Painel de pasta exemplo acima)"
+    },
+    "tab.accounts": {
+        "message": "Organiza contas"
+    },
+    "tab.extra": {
+        "message": "Configurações extras"
+    },
+    "tab.folders": {
+        "message": "Organiza pastas"
+    },
+    "tbsf.menuentry.label": {
+        "message": "Manually sort folders (Organiza pastas manualmente)"
+    },
+    "tc.foldername": {
+        "message": "Nome da Pasta"
+    }
+}

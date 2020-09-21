@@ -56,7 +56,7 @@ function item_label(tree_item) {
   tblog.error("TBSortFolders: severe error, no item label for "+tree_item);
 }
 
-let rdfService = Cc['@mozilla.org/rdf/rdf-service;1'].getService(Ci.nsIRDFService);
+//!! let rdfService = Cc['@mozilla.org/rdf/rdf-service;1'].getService(Ci.nsIRDFService);
 let ftvItems = {};
 
 function rebuild_tree(full, collapse) {
@@ -66,9 +66,9 @@ function rebuild_tree(full, collapse) {
   let myFtvItem = function(tree_item) {
     if (!ftvItems[tree_item.id]) {
       let text = item_label(tree_item);
-      let folder = rdfService.GetResource(tree_item.id);
-      folder.QueryInterface(Ci.nsIMsgFolder);
-      ftvItems[tree_item.id] = { _folder: folder, text: text };
+      //!! let folder = rdfService.GetResource(tree_item.id);
+      //!! folder.QueryInterface(Ci.nsIMsgFolder);
+      //!! ftvItems[tree_item.id] = { _folder: folder, text: text };
     }
     return ftvItems[tree_item.id];
   }

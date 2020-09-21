@@ -1,0 +1,113 @@
+{
+    "accountsort.localfolders": {
+        "message": "Foldery lokalne"
+    },
+    "accountsort.noaccountsetupyet": {
+        "message": "Nie masz jeszcze skonfigurowanego konta!"
+    },
+    "accountsort.restartwarning": {
+        "message": "Aby zmiany zostały zastosowane, należy ponownie uruchomić Thunderbirda."
+    },
+    "accountsort.warning": {
+        "message": "Standardowe konta pocztowe, konta Unix Movemail, a także konta RSS muszą być na początku listy. Za nimi powinny znaleźć się Foldery lokalne i na końcu konta grup dyskusyjnych. Można zmienić to, wybierając Foldery lokalne lub jedno z kont grup dyskusyjnych jako domyślne i umieścić go na szczycie listy."
+    },
+    "accountssort.description": {
+        "message": "Tutaj można określić kolejność kont w panelu folderów. Przejdź do karty „Sortuj foldery”, by posortować foldery wewnątrz konta."
+    },
+    "button.close": {
+        "message": "Zamknij"
+    },
+    "button.move_down": {
+        "message": "W dół"
+    },
+    "button.move_up": {
+        "message": "W górę"
+    },
+    "button.refresh": {
+        "message": "Odśwież panel folderów"
+    },
+    "button.restart": {
+        "message": "Uruchom ponownie Thunderbirda"
+    },
+    "extra.description": {
+        "message": "Użyj tej karty, by dodatkowo dostosować Thunderbirda za pomocą różnych powiązanych z folderami ustawień"
+    },
+    "extra.nofolder": {
+        "message": "Nie wybrano folderu"
+    },
+    "extra.startup": {
+        "message": "Folder początkowy"
+    },
+    "extra.startupfolder": {
+        "message": "Rozpoczynaj z następującym otwartym folderem"
+    },
+    "extra.usecustom": {
+        "message": "użyj własny folder"
+    },
+    "extra.uselast": {
+        "message": "Użyj ostatnio otwierany folder"
+    },
+    "extra.usethisfolder": {
+        "message": "Użyj ten folder"
+    },
+    "gb.extra": {
+        "message": "Dodatkowe informacje"
+    },
+    "gb.first": {
+        "message": "Pierwsze konto w panelu folderów"
+    },
+    "gb.move": {
+        "message": "Przenieś wybrane konto"
+    },
+    "gb.movefolder": {
+        "message": "Przenieś wybrany folder"
+    },
+    "gbfirst.default": {
+        "message": "To jest także domyślne konto."
+    },
+    "general.title": {
+        "message": "Sortuj foldery ręcznie"
+    },
+    "mi.firstmail": {
+        "message": "Pierwszy kanał RSS lub konto pocztowe na liście"
+    },
+    "sortfolders.description": {
+        "message": "Tutaj można ręcznie posortować foldery każdego konta. Wybierz konto i metodę sortowania."
+    },
+    "sortmethod.alphabetical": {
+        "message": "Używaj prostego porównania znaków"
+    },
+    "sortmethod.alphabetical.description": {
+        "message": "To jest standardowa funkcja sortowania używająca tylko podstawowych funkcji porównywania ciągów znaków. Umożliwia ona tworzenie różnych kategorii folderów podobnych do tworzonych przez Gmaila, używając symboli specjalnych Unicode."
+    },
+    "sortmethod.custom": {
+        "message": "Używaj funkcji zdefiniowanych ręcznie"
+    },
+    "sortmethod.custom.description": {
+        "message": "Użyj przycisków znajdujących się powyżej, by ręcznie posortować foldery. Nowo dodawane foldery będą umieszczane na końcu listy. W każdej chwili możesz tutaj wrócić i dowolnie zmieniać kolejność."
+    },
+    "sortmethod.default": {
+        "message": "Używaj domyślnego Thunderbirda"
+    },
+    "sortmethod.default.description": {
+        "message": "To jest domyślna funkcja sortowania używana przez Thunderbirda. W odróżnieniu od Gmaila, nie pobiera na konto symboli specjalnych Unicode."
+    },
+    "sortmethod.samplelegend": {
+        "message": "(Przykładowy panel folderów)"
+    },
+    "tab.accounts": {
+        "message": "Sortuj konta"
+    },
+    "tab.extra": {
+        "message": "Ustawienia dodatkowe"
+    },
+    "tab.folders": {
+        "message": "Sortuj foldery"
+    },
+    "tbsf.menuentry.label": {
+        "message": "Sortuj foldery ręcznie"
+    },
+    "tc.foldername": {
+        "message": "Nazwa folderu"
+    }
+}

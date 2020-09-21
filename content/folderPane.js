@@ -74,7 +74,7 @@
     tblog.debug("Stored accounts: "+tbsf_accounts);
 */
   };
-  var observer_foldertree = new MutationObserver(callback_foldertree);
+  var observer_foldertree = new window.MutationObserver(callback_foldertree);
   observer_foldertree.observe(mainWindow.document.getElementById('folderTree'),config);
 
 //  observer_foldertree.disconnect();
@@ -152,16 +152,16 @@
 
 
   /* For default startup folder */
-  let oldRestoreTab = mailTabType.modes.folder.restoreTab;
+  let oldRestoreTab = window.mailTabType.modes.folder.restoreTab;
   let inRestoreTab = false;
-  mailTabType.modes.folder.restoreTab = function (x, y) {
+  window.mailTabType.modes.folder.restoreTab = function (x, y) {
     inRestoreTab = true;
     oldRestoreTab.call(this, x, y);
     inRestoreTab = false;
   };
-  let oldSelectFolder = gFolderTreeView.selectFolder;
+  let oldSelectFolder = window.gFolderTreeView.selectFolder;
   let firstRun = true;
-  gFolderTreeView.selectFolder = function (x, y) {
+  window.gFolderTreeView.selectFolder = function (x, y) {
     if (firstRun && inRestoreTab) {
       let startup_folder = tbsf_prefs.getStringPref("startup_folder");
       if (startup_folder != "") {
@@ -183,3 +183,12 @@
   mainWindow.gFolderTreeView.mode = mainWindow.gFolderTreeView.mode;
 
 })()
+
+function onLoad(isAddonActivation) {
+  console.log("folderPane.js onLoad");
+}
+
+function onUnload(isAddonDeactivation) {
+  console.log("folderPane.js onUnload");
+  delete observer_foldertree;
+}

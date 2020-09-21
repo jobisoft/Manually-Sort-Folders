@@ -1,0 +1,113 @@
+{
+    "accountsort.localfolders": {
+        "message": "Lokale mappen"
+    },
+    "accountsort.noaccountsetupyet": {
+        "message": "U hebt nog geen account ingesteld!"
+    },
+    "accountsort.restartwarning": {
+        "message": "U dient Thunderbird te herstarten om de wijzigingen door te voeren."
+    },
+    "accountsort.warning": {
+        "message": "Regulier mailaccounts, Unix Movemailaccounts en RSS-accounts dienen eerst te komen. Hierna volgt Lokale mappen, en onderaan de lijst staan de Nieuwsaccounts. U kunt dit wijzigen door Lokale mappen of één van de Nieuwsaccounts als standaard in te stellen, waardoor deze bovenaan de lijst wordt geplaatst."
+    },
+    "accountssort.description": {
+        "message": "Met dit venster kunt u de accounts ordenen in het mappenvenster. Gebruik het volgende tabblad als u de mappen binnen een account wilt sorteren."
+    },
+    "button.close": {
+        "message": "Sluiten"
+    },
+    "button.move_down": {
+        "message": "Omlaag"
+    },
+    "button.move_up": {
+        "message": "Omhoog"
+    },
+    "button.refresh": {
+        "message": "Mappenvenster verversen"
+    },
+    "button.restart": {
+        "message": "Thunderbird herstarten"
+    },
+    "extra.description": {
+        "message": "Gebruik dit tabblad voor verdere aanpassingen van Thunderbird middels diverse mapgerelateerde instellingen"
+    },
+    "extra.nofolder": {
+        "message": "Geen map geselecteerd"
+    },
+    "extra.startup": {
+        "message": "Opstartmap"
+    },
+    "extra.startupfolder": {
+        "message": "Standaard starten met de volgende map geopend"
+    },
+    "extra.usecustom": {
+        "message": "Aangepaste map gebruiken"
+    },
+    "extra.uselast": {
+        "message": "Laatst geopende map gebruiken"
+    },
+    "extra.usethisfolder": {
+        "message": "Deze map gebruiken"
+    },
+    "gb.extra": {
+        "message": "Aanvullende informatie"
+    },
+    "gb.first": {
+        "message": "Eerste account in het mappenvenster"
+    },
+    "gb.move": {
+        "message": "Geselecteerd account verplaatsen"
+    },
+    "gb.movefolder": {
+        "message": "Geselecteerde map verplaatsen"
+    },
+    "gbfirst.default": {
+        "message": "Dit is ook het standaardaccount."
+    },
+    "general.title": {
+        "message": "Mappen handmatig sorteren"
+    },
+    "mi.firstmail": {
+        "message": "Eerste RSS- of mailaccount in de lijst"
+    },
+    "sortfolders.description": {
+        "message": "Met dit venster kunt u de mappen van elke account sorteren. Selecteer eerst een account en daarna een sorteermethode."
+    },
+    "sortmethod.alphabetical": {
+        "message": "Vergelijken op platte tekst"
+    },
+    "sortmethod.alphabetical.description": {
+        "message": "Dit is een standaardsorteerfunctie die niets anders gebruikt dan de meest basale tekstvergelijkingsfunctie. U kunt er verschillende foldercategorieën mee maken zoals in GMail door gebruik te maken van speciale Unicode-symbolen."
+    },
+    "sortmethod.custom": {
+        "message": "Handmatig ingestelde sorteerfunctie gebruiken"
+    },
+    "sortmethod.custom.description": {
+        "message": "Gebruik bovenstaande knoppen om uw mappen handmatig te sorteren. Als een nieuwe map wordt toegevoegd, wordt deze aan het einde van de lijst geplaatst. U kunt later hier terugkomen als u dat anders zou willen."
+    },
+    "sortmethod.default": {
+        "message": "Standaard van Thunderbird gebruiken"
+    },
+    "sortmethod.default.description": {
+        "message": "Dit is de standaardsorteerfunctie van Thunderbird. Anders dan GMail worden speciale Unicode-symbolen niet meegenomen."
+    },
+    "sortmethod.samplelegend": {
+        "message": "(Voorbeeld mappenvenster boven)"
+    },
+    "tab.accounts": {
+        "message": "Accounts sorteren"
+    },
+    "tab.extra": {
+        "message": "Extra instellingen"
+    },
+    "tab.folders": {
+        "message": "Mappen sorteren"
+    },
+    "tbsf.menuentry.label": {
+        "message": "Mappen handmatig sorteren"
+    },
+    "tc.foldername": {
+        "message": "Mapnaam"
+    }
+}
