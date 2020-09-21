@@ -166,14 +166,16 @@
      *   the widgets unique id.
      * @param {string} label
      *   the widgets description.
+     * @param {string} oncommand
+     *   the event handler to be called.
      * @param {string} [accesskey]
      *   the optional access key.
      */
-    constructor(id, label, accesskey, oncommand) {
+    constructor(id, label, oncommand, accesskey) {
       super(id);
       this.label = label;
-      this.accesskey = accesskey;
       this.oncommand = oncommand;
+      this.accesskey = accesskey;
     }
 
     createNode(document) {
@@ -182,7 +184,7 @@
       item.setAttribute("label", this.label);
       item.setAttribute("oncommand", this.oncommand);
 
-      if (typeof (this.accesskey) !== "undefined" || this.accesskey !== null)
+      if (typeof (this.accesskey) !== "undefined" && this.accesskey !== null)
         item.setAttribute("accesskey", this.accesskey);
 
       return item;
@@ -227,7 +229,7 @@
       item.setAttribute("label", this.label);
       item.setAttribute("class", "subviewbutton");
 
-      if (typeof (this.accesskey) !== "undefined" || this.accesskey !== null)
+      if (typeof (this.accesskey) !== "undefined" && this.accesskey !== null)
         item.setAttribute("accesskey", this.accesskey);
 
       return item;
@@ -283,7 +285,7 @@
    */
   function createWidget(widget) {
     if (widget.type === "menu-label")
-      return new MenuLabel(widget.id, widget.label, widget.accesskey, widget.oncommand);
+      return new MenuLabel(widget.id, widget.label, widget.oncommand, widget.accesskey);
 
     if (widget.type === "menu-separator")
       return new MenuSeparator(widget.id);

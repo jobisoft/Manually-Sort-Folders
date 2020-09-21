@@ -12,12 +12,11 @@
     const id = `${window.id}`;
 
     messenger.LegacyMenu.add(id, {
-      "id": "menu_TestItem",
+      "id": "tbsf_menu_item",
       "type": "menu-label",
       "reference": "activityManager",
       "position": "after",
       "label": messenger.i18n.getMessage("tbsf.menuentry.label"),
-      "accesskey": "T",
       "oncommand": "window.openDialog('chrome://tbsortfolders/content/tbsortfolders.xhtml', '', 'chrome,titlebar,toolbar,centerscreen');"
     });
   }
