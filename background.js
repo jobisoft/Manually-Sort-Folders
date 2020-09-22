@@ -22,8 +22,6 @@ messenger.WindowListener.registerChromeUrl([
   ["locale",   "tbsortfolders", "zh-CN", "locale/zh-CN/"],
   ["locale",   "tbsortfolders", "zh-TW", "locale/zh-TW/"],
 ]);
-
-messenger.WindowListener.registerOptionsPage("chrome://messenger/content/messenger.xul")
   
 messenger.WindowListener.registerWindow(
   "chrome://messenger/content/messenger.xul",

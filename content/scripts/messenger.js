@@ -9,7 +9,7 @@ function onLoad(activatedWhileWindowOpen) {
   WL.injectElements(`
     <menupopup id="taskPopup">
       <menuitem insertafter="activityManager" id="tbsf_menu_item"
-        oncommand="window.openDialog('chrome://tbsortfolders/content/', '',
+        oncommand="window.openDialog('chrome://tbsortfolders/content/tbsortfolders.xul', '',
           'chrome,titlebar,toolbar,centerscreen');"
         label="&tbsf.menuentry.label;" />
     </menupopup>`,
